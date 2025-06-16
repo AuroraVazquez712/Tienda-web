@@ -1,23 +1,65 @@
-/*===========================HEADERS====================*/
-body {
-    
-    display:flex;
-    backgro
+/* ===== Carrito de compras ===== */
+#payment-area {
+    background-color: #ffffff;
+    border: 2px dashed #5a2a83;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(90, 42, 131, 0.1);
+    min-height: 300px;
 }
 
-
-#main-header
-{
-
+/* Título del carrito */
+#payment-title {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #5a2a83;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
+}
+#products-area{
+    background-color: #ffffff;
+    border: 2px dashed #5a2a83;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(90, 42, 131, 0.1);
+    min-height: 300px;
 }
 
-
-
-/*===========================Catalogue====================*/
-/*===========================Paye====================*/===*/
-#catalogue
-{
-    
+/* Estilo para los productos dentro del carrito */
+#payment-area .producto-carrito {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f9f4ff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
 }
 
-/*===========================Payment area====================*/
+/* Nombre del producto */
+.producto-carrito .nombre {
+    font-weight: bold;
+    color: #333;
+}
+
+/* Precio */
+.producto-carrito .precio {
+    color: #28a745;
+    font-size: 1rem;
+}
+
+/* Botón de eliminar */
+.producto-carrito .eliminar {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.producto-carrito .eliminar:hover {
+    background-color: #c0392b;
+}
