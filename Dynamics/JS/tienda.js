@@ -9,6 +9,10 @@ class Producto
         this.precio = _precio; 
         
     }
+    set Imagen(img_dir)
+    {
+
+    }
 }
 class Products_queue
 {
