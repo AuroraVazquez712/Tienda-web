@@ -11,7 +11,7 @@ class Producto
         this.nombre = _nombre;
         this.imagen = _imagen;
         this.descripcion = _descrip;
-        this.precio = _precio;   
+        this.precio = _precio; 
     }
 }
 class Products_queue
@@ -23,6 +23,13 @@ class Products_queue
 
         let new_div = document.createElement("div");
         new_div.className("product");
+
+        const payArea = document.getElementById("products-area");
+        for (let i=0; i < this.products_queue.length; i++){
+            p = this.products_queue[i];
+            payArea.innerHTML += "<div class=\"Producto\"><img src="+p.imagen+">"
+                    +p.nombre+", "+p.descripcion+", "+p.precio+"</div>"
+        }
     }
 }
 
@@ -43,3 +50,4 @@ Products_Stack =
     new Producto("Comida", "../../Statics/Img/comida.png", "Deliciosa comida", "50$ mxn"),
     
 ]
+
