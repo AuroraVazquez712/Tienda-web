@@ -11,16 +11,18 @@ class Producto
     }
     set Imagen(img_dir)
     {
-
+        
     }
 }
 class Products_queue
 {
-    constructor(_producto)
+    constructor(_productos)
     {
-        
+        this.products_queue = Array();
+        this.products_queue.push(_productos);
     }
 }
 /*===========================Elementos del documento====================*/
 
 let area_productos_obj = document.getElementById("products-area");
+let Products_queue_obj = Products_queue();
