@@ -1,7 +1,5 @@
 /*===========================Elementos del documento====================*/
-
 let area_productos_obj = document.getElementById("products-area");
-let Products_queue_obj = Products_queue();
 
 
 /*===========================Objetos importantes====================*/
@@ -27,3 +25,21 @@ class Products_queue
         new_div.className("product");
     }
 }
+
+let Products_queue_obj = new Products_queue();
+
+Products_Stack = 
+[
+    new Producto("Charola","../../Statics/Img/charola.webp","Charola de plastico 30x15cm","100$ mxn"),
+    new Producto("Comida", "../../Statics/Img/comida.png", "Deliciosa comida", "50$ mxn"),
+    new Producto("Manzana", "../../Statics/Img/manzana.png", "Deliciosa comida", "50$ mxn"),
+    
+    new Producto("Comida", "../../Statics/Img/comida.png", "Deliciosa comida", "50$ mxn"),
+    new Producto("Comida", "../../Statics/Img/comida.png", "Deliciosa comida", "50$ mxn"),
+    new Producto("Comida", "../../Statics/Img/comida.png", "Deliciosa comida", "50$ mxn"),
+    
+    new Producto("Comida", "../../Statics/Img/comida.png", "Deliciosa comida", "50$ mxn"),
+    new Producto("Comida", "../../Statics/Img/comida.png", "Deliciosa comida", "50$ mxn"),
+    new Producto("Comida", "../../Statics/Img/comida.png", "Deliciosa comida", "50$ mxn"),
+    
+]
