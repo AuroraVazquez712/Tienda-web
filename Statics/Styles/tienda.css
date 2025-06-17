@@ -9,11 +9,16 @@
     src: url(../Fonts/Orange\ Gummy.ttf);
 }
 
+@font-face {
+    font-family: "carrito";
+    src: url(../Fonts/AMORIA.otf);
+}
+
 body {
     
     display:flex;
     flex-direction: column;
-    background-color: azure;
+    background-color: rgb(29, 17, 63);
     align-items: center;
     margin: 0;
     min-height: 100vh;
@@ -21,22 +26,24 @@ body {
 }
 
 .Producto {
-    background-color: rgb(68,140,140);
-    border: 1px solid #5856d1;
+    background-color: #2370a3; 
+    color: rgb(1, 7, 22);
+    padding: 10px 15px;
+    margin-bottom: 10px; 
     border-radius: 8px;
-    padding: 15px;
-    text-align: center;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly; 
-    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    text-align: left; 
+    font-weight: bold; 
 }
 
 #main-header
 {
     font-family: "Titulo_chido";
     color:#5856d1;
-    font-size: 120px;
+    font-size: 200px;
     width: 100%;
     text-align: center;
     padding: 20px 0;
@@ -53,28 +60,32 @@ body {
     font-family: "Catalogo";
     color:rgb(10, 16, 51);
     font-size: 40px;
+    flex: 2;
+    text-align: center;
 }
 /* ===== Carrito de compras ===== */
 #payment-area {
-    background-color: #ffffff;
-    border: 2px dashed #5a2a83;
+    background-color: #0c0b14;
+    border: 2px dashed #f7eeff;
     border-radius: 15px;
     padding: 20px;
     box-shadow: 0 4px 10px rgba(90, 42, 131, 0.1);
     min-height: 300px;
+    flex: 1;
 }
 
 /* Título del carrito */
 #payment-title {
-    font-size: 1.8rem;
+    font-size: 40px;
+    font-family: "carrito";
     margin-bottom: 15px;
-    color: #5a2a83;
-    border-bottom: 2px solid #ddd;
+    color: #929aff;
+    border-bottom: 2px solid #b0b1f8;
     padding-bottom: 5px;
 }
 #products-area{
-    background-color: #ffffff;
-    border: 2px dashed #5a2a83;
+    background-color: #100977;
+    border: 2px dashed #1a0f24;
     border-radius: 15px;
     padding: 20px;
     box-shadow: 0 4px 10px rgba(90, 42, 131, 0.1);
@@ -86,8 +97,8 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #f9f4ff;
-    border: 1px solid #ddd;
+    background-color: #8789f1;
+    border: 1px solid #343455;
     border-radius: 10px;
     padding: 10px;
     margin-bottom: 10px;
@@ -96,7 +107,7 @@ body {
 /* Nombre del producto */
 .producto-carrito .nombre {
     font-weight: bold;
-    color: #333;
+    color: #a4cbff;
 }
 
 /* Precio */
@@ -119,3 +130,38 @@ body {
 .producto-carrito .eliminar:hover {
     background-color: #c0392b;
 }
+
+
+#ui-section {
+    display:flex; 
+    gap:30px; 
+    align-items: flex-start; 
+    max-width: 1500px ; 
+    margin: 20px auto; 
+    padding: 35px; 
+    background-color:#547781; 
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+
+.Producto >.Producto{ 
+
+    background-color:transparent; 
+    display: flex ; 
+    justify-content: center;
+    align-items: center;
+}
+
+
+.Producto img {
+    max-width: 100px;
+    height:auto;
+    border-radius: 5px ;
+    margin-left: 10px ; 
+    border: 1px solid rgb(10, 16, 51);
+}
+
+
+
+
