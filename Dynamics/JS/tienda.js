@@ -14,20 +14,6 @@ class Producto
         this.precio = _precio; 
     }
 }
-class Products_queue
-{
-    constructor(_productos)
-    {
-        this.products_queue = _productos;
-
-        const payArea = document.getElementById("products-area");
-        for (let i=0; i < this.products_queue.length; i++){
-            const p = this.products_queue[i];
-            payArea.innerHTML += "<div class=\"Producto\"><img src="+p.imagen+">"
-                    +p.nombre+", "+p.descripcion+", "+p.precio+"</div>";
-        }
-    }
-}
 
 Products_Stack = 
 [
@@ -45,4 +31,9 @@ Products_Stack =
     
 ]
 
-let Products_queue_obj = new Products_queue(Products_Stack);
+const payArea = document.getElementById("products-area");
+    for (let i=0; i < this.Products_Stack.length; i++){
+        const p = this.products_queue[i];
+        payArea.innerHTML += "<div class=\"Producto\"><img src="+p.imagen+">"
+                +p.nombre+", "+p.descripcion+", "+p.precio+"</div>";
+    }
