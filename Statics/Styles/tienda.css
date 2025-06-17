@@ -6,7 +6,7 @@
 
 @font-face{
     font-family: "Catalogo";
-    src: url(../Fonts/Orange\ Gummy.ttf);
+    src: url(../Fonts/This\ Cafe.ttf);
 }
 
 @font-face {
@@ -52,7 +52,7 @@ body {
 {
     font-family: "Titulo_chido";
     color:#e8e8f3;
-    font-size: 200px;
+    font-size: 300px;
     width: 100%;
     text-align: center;
     padding: 20px 0;
@@ -67,8 +67,8 @@ body {
 #catalogue
 {
     font-family: "Catalogo";
-    color:rgb(10, 16, 51);
-    font-size: 80px;
+    color:rgb(3, 3, 63);
+    font-size: 100px;
     flex: 2;
     text-align: center;
 }
