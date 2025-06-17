@@ -14,6 +14,11 @@
     src: url(../Fonts/AMORIA.otf);
 }
 
+@font-face {
+    font-family: "names";
+    src: url(../Fonts/limetart.ttf);
+}
+
 body {
     
     display:flex;
@@ -26,23 +31,27 @@ body {
 }
 
 .Producto {
-    background-color: #2370a3; 
-    color: rgb(1, 7, 22);
+    background-color: #557e9b; 
+    color: rgb(0, 2, 7);
     padding: 10px 15px;
     margin-bottom: 10px; 
     border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 5px rgba(158, 21, 21, 0.1);
     display: flex; 
     align-items: center; 
-    justify-content: space-between; 
+    justify-content: center; 
     text-align: left; 
     font-weight: bold; 
+    font-family: "names";
+    font-size: 45px;
+
+
 }
 
 #main-header
 {
     font-family: "Titulo_chido";
-    color:#5856d1;
+    color:#e8e8f3;
     font-size: 200px;
     width: 100%;
     text-align: center;
@@ -59,7 +68,7 @@ body {
 {
     font-family: "Catalogo";
     color:rgb(10, 16, 51);
-    font-size: 40px;
+    font-size: 80px;
     flex: 2;
     text-align: center;
 }
@@ -155,7 +164,7 @@ body {
 
 
 .Producto img {
-    max-width: 100px;
+    max-width: 320px;
     height:auto;
     border-radius: 5px ;
     margin-left: 10px ; 
