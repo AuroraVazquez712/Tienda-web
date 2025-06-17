@@ -30,8 +30,10 @@ Products_Stack =
 
 for(iterador in Products_Stack)
 {
-
-    payArea.innerHTML += "<div class=\"Producto\"><img src=+" + Products_Stack[iterador].imagen + ">" +
-    Products_Stack[iterador].nombre + ", " + Products_Stack[iterador].descripcion + ", " + Products_Stack[iterador].precio +
-    "</div>";
+    let new_product = document.createElement("div");
+    new_product.className = "Producto";
+    new_product.textContent =  Products_Stack[iterador].nombre + ", " + Products_Stack[iterador].descripcion + ", " + Products_Stack[iterador].precio;
+    new_product.innerHTML += "<div class=\"Producto\"><img src=" + Products_Stack[iterador].imagen + ">" + "</div>";
+    
+    payArea.appendChild(new_product);
 }
