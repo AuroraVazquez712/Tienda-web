@@ -119,3 +119,38 @@ body {
 .producto-carrito .eliminar:hover {
     background-color: #c0392b;
 }
+
+/*ELEMENTOS DEL PRODUCTO*/
+
+
+/**
+ * CLASES DE ELEMENTOS DEL PRODUCTO
+ * TITULO : product-title
+ * DESC : product-bio
+ * PRIX : product-value
+ * IMG : product-img
+ */
+ 
+.product-title
+{
+    color:#e74c3c
+}
+.product-bio
+{
+    color: #5856d1;
+}
+.product-value
+{
+    color: aqua;
+}
+.product-bt 
+{
+    background-color: #5856d1;
+}
+.product-bt :hover
+{
+
+}
+.product-img
+{
+}

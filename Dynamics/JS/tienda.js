@@ -27,13 +27,17 @@ Products_Stack =
     new Producto("Rollo papel baño", "../../Statics/Img/servilletaEnCilindro.webp", "Doble hoja 10mil hojas", "15$ mxn"),
     new Producto("Tubo papel baño", "../../Statics/Img/servilletaTransparenteEnCilindro.jpg", "1M hojas invisibles", "10$ mxn"),
 ]
-
 for(iterador in Products_Stack)
 {
     let new_product = document.createElement("div");
-    new_product.className = "Producto";
-    new_product.textContent =  Products_Stack[iterador].nombre + " " + Products_Stack[iterador].descripcion + ", " + Products_Stack[iterador].precio;
-    new_product.innerHTML += "<div class=\"Producto\"><img src=' " + Products_Stack[iterador].imagen + "'>" + "</div>";
+    new_product.className = "Producto";   
+    
+    new_product.innerHTML = "<div class='Producto'>" +
+    "<h4 class = 'product-title'>" + Products_Stack[iterador].nombre + "</h4>" +
+    "<p class = 'product-bio'>" + Products_Stack[iterador].descripcion + "</p>" +
+    "<p class = 'product-value'>" + Products_Stack[iterador].precio + "</p>" +
+    "<button class = 'product-bt'>Comprar</button>" +
+    "<img class = 'product-img' src =' >" + Products_Stack[iterador].imagen + "'></div>";
 
 
     payArea.appendChild(new_product);
