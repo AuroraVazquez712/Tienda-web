@@ -6,14 +6,24 @@
 
 @font-face{
     font-family: "Catalogo";
-    src: url(../Fonts/Orange\ Gummy.ttf);
+    src: url(../Fonts/This\ Cafe.ttf);
+}
+
+@font-face {
+    font-family: "carrito";
+    src: url(../Fonts/AMORIA.otf);
+}
+
+@font-face {
+    font-family: "names";
+    src: url(../Fonts/limetart.ttf);
 }
 
 body {
     
     display:flex;
     flex-direction: column;
-    background-color: azure;
+    background-color: rgb(29, 17, 63);
     align-items: center;
     margin: 0;
     min-height: 100vh;
@@ -21,22 +31,28 @@ body {
 }
 
 .Producto {
-    background-color: rgb(68,140,140);
-    border: 1px solid #5856d1;
+    background-color: #557e9b; 
+    color: rgb(0, 2, 7);
+    padding: 10px 15px;
+    margin-bottom: 10px; 
     border-radius: 8px;
-    padding: 15px;
-    text-align: center;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly; 
-    align-items: center;
+    box-shadow: 0 2px 5px rgba(158, 21, 21, 0.1);
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    text-align: left; 
+    font-weight: bold; 
+    font-family: "names";
+    font-size: 50px;
+
+
 }
 
 #main-header
 {
     font-family: "Titulo_chido";
-    color:#5856d1;
-    font-size: 120px;
+    color:#e8e8f3;
+    font-size: 300px;
     width: 100%;
     text-align: center;
     padding: 20px 0;
@@ -55,30 +71,34 @@ body {
 #catalogue
 {
     font-family: "Catalogo";
-    color:rgb(10, 16, 51);
-    font-size: 40px;
+    color:rgb(3, 3, 63);
+    font-size: 130px;
+    flex: 2;
+    text-align: center;
 }
 /* ===== Carrito de compras ===== */
 #payment-area {
-    background-color: #ffffff;
-    border: 2px dashed #5a2a83;
+    background-color: #0c0b14;
+    border: 2px dashed #f7eeff;
     border-radius: 15px;
     padding: 20px;
     box-shadow: 0 4px 10px rgba(90, 42, 131, 0.1);
     min-height: 300px;
+    flex: 1;
 }
 
 /* Título del carrito */
 #payment-title {
-    font-size: 1.8rem;
+    font-size: 60px;
+    font-family: "carrito";
     margin-bottom: 15px;
-    color: #5a2a83;
-    border-bottom: 2px solid #ddd;
+    color: #c8c9db;
+    border-bottom: 2px solid #b0b1f8;
     padding-bottom: 5px;
 }
 #products-area{
-    background-color: #ffffff;
-    border: 2px dashed #5a2a83;
+    background-color: #100977;
+    border: 2px dashed #1a0f24;
     border-radius: 15px;
     padding: 20px;
     box-shadow: 0 4px 10px rgba(90, 42, 131, 0.1);
@@ -90,8 +110,8 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #f9f4ff;
-    border: 1px solid #ddd;
+    background-color: #b8b9f7;
+    border: 1px solid #343455;
     border-radius: 10px;
     padding: 10px;
     margin-bottom: 10px;
@@ -100,7 +120,7 @@ body {
 /* Nombre del producto */
 .producto-carrito .nombre {
     font-weight: bold;
-    color: #333;
+    color: #a4cbff;
 }
 
 /* Precio */
@@ -124,6 +144,7 @@ body {
     background-color: #c0392b;
 }
 
+<<<<<<< HEAD
 /*ELEMENTOS DEL PRODUCTO*/
 
 
@@ -158,3 +179,39 @@ body {
 .product-img
 {
 }
+=======
+
+#ui-section {
+    display:flex; 
+    gap:30px; 
+    align-items: flex-start; 
+    max-width: 5000px ; 
+    margin: 20px auto; 
+    padding: 35px; 
+    background-color:#829ba1; 
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+
+.Producto >.Producto{ 
+
+    background-color:transparent; 
+    display: flex ; 
+    justify-content: center;
+    align-items: center;
+}
+
+
+.Producto img {
+    max-width: 320px;
+    height:auto;
+    border-radius: 5px ;
+    margin-left: 10px ; 
+    border: 1px solid rgb(10, 16, 51);
+}
+
+
+
+
+>>>>>>> 6b416294221edbe597e7a88b2a30626881aae7cf
