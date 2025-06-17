@@ -1,5 +1,5 @@
 /*===========================Elementos del documento====================*/
-const area_productos_obj = document.getElementById("products-area");
+const payArea = document.getElementById("products-area");
 
 /*===========================Objetos importantes====================*/
 class Producto
@@ -9,12 +9,11 @@ class Producto
         this.nombre = _nombre;
         this.imagen = _imagen;
         this.descripcion = _descrip;
-        this.precio = _precio;   
+        this.precio = _precio; 
     }
 }
 
-/*===========================Lista de productos====================*/
-stack = 
+Products_Stack = 
 [
     new Producto("Charola","../../Statics/Img/charola.webp","Charola de plastico 30x15cm","100$ mxn"),
     new Producto("Comida", "../../Statics/Img/comida.png", "Deliciosa comida", "50$ mxn"),
@@ -29,9 +28,10 @@ stack =
     new Producto("Tubo papel baño", "../../Statics/Img/servilletaTransparenteEnCilindro.jpg", "Deliciosa comida", "10$ mxn"),
 ]
 
-let Products_queue = Array();
-
-for(iterador in stack)
+for(iterador in Products_Stack)
 {
-    
+
+    payArea.innerHTML += "<div class=\"Producto\"><img src=+" + Products_Stack[iterador].imagen + ">" +
+    Products_Stack[iterador].nombre + ", " + Products_Stack[iterador].descripcion + ", " + Products_Stack[iterador].precio +
+    "</div>";
 }
